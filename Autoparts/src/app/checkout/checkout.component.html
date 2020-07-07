@@ -1,0 +1,25 @@
+<!--component html goes here -->
+
+<div class="container">
+    <h1>Checkout</h1>
+<form>
+    <b>Shipping Address:</b><br>
+    Street:
+      <input type="text" name="name" [(ngModel)]="name"><br>
+       City:
+      <input type="text" name="city" [(ngModel)]="city" ><br>
+       State:
+      <input  type="text" name="state" [(ngModel)]="state"><br>
+     
+      <input type="checkbox"  (change)="filladdress1($event)"> same as above address<br>
+     
+      <b>Billing Address:</b><br>
+    Street:
+      <input type="text" name="cname" value="{{cname}}" ><br>
+       City:
+      <input type="text" name="ccity" value="{{ccity}}"><br>
+       State:
+      <input type="text" name="cstate" value="{{cstate}}"><br>
+  
+      </form>
+    </div>

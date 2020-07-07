@@ -1,0 +1,253 @@
+<!-- nav -->
+<div id="brandname">
+  <i style="font-size:30px;color:red" routerLink="/"  >Ferrari</i>  
+    </div>
+    <!-- <div *ngIf="!currentUser">
+      <header> 
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                       <a class="navbar-brand nav-link" routerLink="/" id="navbrand">  
+                         <i class="fa fa-steam" style="font-size:30px;color:red"></i>  
+                           </a>
+                          <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+                             &#9776;
+                           </button>
+                           <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+                       <ul class="navbar-nav mr-auto">
+                           <li class="nav-item dropdown">
+                             <div ngbDropdown class="d-inline-block">
+                              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU</button>
+                               <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                 <button ngbDropdownItem>Action - 1</button>
+                                 <button ngbDropdownItem>Link</button>
+                                 <div class="dropdown-divider"></div>
+                                 <button ngbDropdownItem>Link</button>
+                               </div>
+                             </div>
+                           </li>
+                           <li class="nav-item dropdown">
+                             <div ngbDropdown class="d-inline-block">
+                              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOP</button>
+                               <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                 <button ngbDropdownItem>Action - 1</button>
+                                 <button ngbDropdownItem>Link</button>
+                                 <div class="dropdown-divider"></div>
+                                 <button ngbDropdownItem>Link</button>
+                               </div>
+                             </div>
+                           </li>
+                           
+              <li class="nav-item dropdown">
+                <div ngbDropdown class="d-inline-block">
+                 <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ACCOUNT</button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                   <div class="container mr-40">
+                   </div>
+                    </div>
+                </div>
+              </li>
+              </ul>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="dropdown">
+                  <input class="form-control mr-sm-2" type="search" id="myInput" placeholder="Search" (keyup)="filterFunction()" (click)="myFunction()"  (clickOutside)="onClickedOutside($event)" aria-label="Search">
+                 <div  *ngIf="show"  id="myDropdown"  class="dropdown-content">
+                 <h6 class="dropdown-item"> Products</h6>
+                     <a class="dropdown-item" href="#about">About</a>
+                      <a class="dropdown-item" href="#base">Parent corp</a>
+                      <a class="dropdown-item" href="#blog">Location</a>
+                    <a class="dropdown-item" href="#contact">Contact info</a>
+                  <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-item" >Categories</h6>
+                      <a class="dropdown-item" href="#about">About</a>
+                      <a class="dropdown-item" href="#base">Parent Corp</a>
+                      <a class="dropdown-item" href="#blog">Location</a>
+                      <a class="dropdown-item" href="#contact">Contact info</a>
+                  </div>
+                 </div>
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+               </div>
+               <li class="nav-item dropdown">
+                <div ngbDropdown class="d-inline-block">
+                 <button type="button" class="btn btn-dark dropdown-toggle" id="dropdownBasic1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                     <login-app></login-app>
+                    </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <div ngbDropdown class="d-inline-block">
+                  <button type="button" class="btn btn-dark dropdown-toggle" id="dropdownBasic2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><header-component></header-component></button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                   <div class="container">
+                    <cart-component></cart-component>
+                  </div>
+                    </div>
+                </div>
+              </li>
+              </div>
+              </nav>
+     </header>
+    
+ </div>
+     -->
+  
+  
+<div *ngIf="currentUser">
+  <header > 
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand nav-link" routerLink="/" id="navbrand">  
+                    <i style="font-size:30px;color:red"></i>  
+                      </a>
+                      <li routerLink="/" class="nav-item nav-link text-light">
+                        home
+                      </li>
+                     <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+                        &#9776;
+                      </button>
+                      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <div ngbDropdown class="d-inline-block">
+                          <button type="button" class="btn btn-dark dropdown-toggle" routerLink="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
+                          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem>Action - 1</button>
+                            <button ngbDropdownItem>Link</button>
+                            <div class="dropdown-divider"></div>
+                            <button ngbDropdownItem>Link</button>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <div ngbDropdown class="d-inline-block">
+                          <button type="button" class="btn btn-dark dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</button>
+                          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem>Action - 1</button>
+                            <button ngbDropdownItem>Link</button>
+                            <div class="dropdown-divider"></div>
+                            <button ngbDropdownItem>Link</button>
+                          </div>
+                        </div>
+                      </li>
+                      
+          <li class="nav-item dropdown">
+            <div ngbDropdown class="d-inline-block">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="dropdown">
+            <input class="form-control mr-sm-2" type="search" id="myInput" placeholder="Search" (keyup)="filterFunction()" (click)="myFunction()" (clickOutside)="onClickedOutside($event)" aria-label="Search">
+           <div  *ngIf="show"  id="myDropdown"  class="dropdown-content">
+           <!-- <h6 class="dropdown-item"> Products</h6>
+               <a class="dropdown-item" href="#about">About</a>
+                <a class="dropdown-item" href="#base">Base</a>
+                <a class="dropdown-item" href="#blog">Blog</a>
+              <a class="dropdown-item" href="#contact">Contact</a>
+            <div class="dropdown-divider"></div> -->
+              <h6 class="dropdown-item" >Categories</h6>
+                <a class="dropdown-item" routerLink="/headlight">Engine</a>
+                <a class="dropdown-item" routerLink="/turnsignal">Breaks</a>
+                <a class="dropdown-item" routerLink="/foglight">Lights</a>
+                <a class="dropdown-item" routerLink="/tyres">Tyres</a>
+            </div>
+           </div>
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <li class="nav-item dropdown">
+          <div ngbDropdown class="d-inline-block">
+           <button type="button" class="btn btn-dark dropdown-toggle" id="dropdownBasic1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+             <div class="container mr-40">
+              <button ngbDropdownItem>Hi {{currentUser.firstName}}!</button>
+              <button ngbDropdownItem>Another Action</button>
+              <div class="dropdown-divider"></div>
+              <button ngbDropdownItem ><a class="nav-item nav-link" (click)="logout()">Logout</a></button>
+             </div>
+              </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <div ngbDropdown class="d-inline-block">
+            <button type="button" class="btn btn-dark dropdown-toggle"  id="dropdownBasic2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><header-component></header-component></button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+             <div class="container">
+               <cart-component></cart-component>
+           </div>
+              </div>
+          </div>
+        </li>
+          </div>
+        </nav>
+</header>
+
+</div>
+<!-- carousel -->
+
+<router-outlet></router-outlet>
+
+
+
+
+<div *ngIf="currentUser">
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+       <div class="row">
+   <div class="p-4 m-4"> 
+       <a class="navbar-brand" href="#">    
+        <i  style="font-size:30px;color:red">Ferrari</i>  
+      </a>
+      <br>
+      <br>
+      Email id:
+      <p>autoparts@ferrari.net</p>
+      Phone Number:
+      <p>+418148874711</p>
+      
+      Company Location:
+      <p>
+        12B Baker ,
+        London,
+        UK.
+      </p>
+  </div>
+   <div class="p-4 m-4"> 
+       <h3>INFORMATION:</h3>
+       Email id:
+      <p>autoparts@ferrari.net</p>
+      Phone Number:
+      <p>+418148874711</p>
+      
+      Company Location:
+      <p>
+        12B Baker ,
+        London,
+        UK.
+      </p>
+      </div>
+   <div class="p-4 m-4">
+    <h3>ACCOUNT:</h3>
+    Email id:
+      <p>autoparts@ferrari.net</p>
+      Phone Number:
+      <p>+418148874711</p>
+      
+      Company Location:
+      <p>
+        12B Baker ,
+        London,
+        UK.
+      </p>
+   </div>
+   <div class="p-4 ">
+<button id="button1" (click)="topFunction()">Back to top </button>
+</div>
+  </div>
+
+</footer>
+</div>

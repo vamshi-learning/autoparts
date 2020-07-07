@@ -1,0 +1,19 @@
+<ngb-carousel *ngIf="event_list">
+    <ng-template ngbSlide *ngFor="let event of event_list">
+      <img [src]="event.img" class="d-block w-100" alt="Random slide" height="600" width="1000" >
+    </ng-template>
+  </ngb-carousel>
+  
+  
+  <main role="main">
+  <product-list-component [products]="products"></product-list-component>
+  </main>
+  
+
+
+
+     
+            
+
+
+    
